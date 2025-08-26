@@ -1,6 +1,6 @@
 package com.wiom.booking.service;
 
-import com.wiom.booking.model.Booking;
+import com.wiom.booking.entities.Booking;
 import com.wiom.booking.repository.BookingRepository;
 import org.springframework.stereotype.Service;
 

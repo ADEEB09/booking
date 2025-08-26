@@ -1,6 +1,6 @@
 package com.wiom.booking.controller;
 
-import com.wiom.booking.model.Booking;
+import com.wiom.booking.entities.Booking;
 import com.wiom.booking.service.BookingService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

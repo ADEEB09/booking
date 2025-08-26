@@ -1,6 +1,6 @@
 package com.wiom.booking.repository;
 
-import com.wiom.booking.model.Booking;
+import com.wiom.booking.entities.Booking;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

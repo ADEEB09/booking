@@ -1,4 +1,4 @@
-package com.wiom.booking.model;
+package com.wiom.booking.entities;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
