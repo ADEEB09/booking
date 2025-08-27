@@ -1,31 +1,14 @@
-package com.wiom.booking.entities;
+package com.wiom.booking.entities.response;
 
-import jakarta.persistence.*;
-
-@Entity
-@Table(name = "bookings")
-public class Booking {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class BookingResponse {
     private Long id;
-
     private String name;
-
-    @Column(nullable = false, unique = true)
     private String mobile;
-
     private Integer status;
-
-    @Column(columnDefinition = "TEXT")
     private String address;
 
-    // Default constructor (required by JPA)
-    public Booking() {
-    }
-
-    // All-args constructor
-    public Booking(Long id, String name, String mobile, Integer status, String address) {
+    // Constructor
+    public BookingResponse(Long id, String name, String mobile, Integer status, String address) {
         this.id = id;
         this.name = name;
         this.mobile = mobile;
@@ -33,11 +16,10 @@ public class Booking {
         this.address = address;
     }
 
-    // Getters and setters
+    // Getters and Setters
     public Long getId() {
         return id;
     }
-
     public void setId(Long id) {
         this.id = id;
     }
@@ -45,7 +27,6 @@ public class Booking {
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
@@ -53,7 +34,6 @@ public class Booking {
     public String getMobile() {
         return mobile;
     }
-
     public void setMobile(String mobile) {
         this.mobile = mobile;
     }
@@ -61,7 +41,6 @@ public class Booking {
     public Integer getStatus() {
         return status;
     }
-
     public void setStatus(Integer status) {
         this.status = status;
     }
@@ -69,7 +48,6 @@ public class Booking {
     public String getAddress() {
         return address;
     }
-
     public void setAddress(String address) {
         this.address = address;
     }
